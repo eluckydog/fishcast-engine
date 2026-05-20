@@ -1,0 +1,758 @@
+{
+  "fish_species": [
+    {
+      "name": "鲫鱼",
+      "scientific_name": "Carassius auratus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 15,
+        "max": 25
+      },
+      "feeding_temp": {
+        "min": 5,
+        "max": 30
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P3", "P4", "P6", "P9"],
+      "food_types": ["杂食性", "昆虫", "藻类", "植物种子"],
+      "fishing_method": ["台钓", "传统钓", "长竿短线"],
+      "bait_types": ["商品饵", "蚯蚓", "红虫", "麦粒", "玉米"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃停口，窗口期变短",
+        "low_oxygen": "溶氧<3mg/L摄食下降，上浮",
+        "pressure_drop": "气压<1000hPa鱼情转差",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["浅", "中", "深"],
+      "difficulty": "入门"
+    },
+    {
+      "name": "鲤鱼",
+      "scientific_name": "Cyprinus carpio",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 15,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.5,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P3", "P4", "P8", "P9"],
+      "food_types": ["杂食性", "昆虫", "植物根茎", "软体动物"],
+      "fishing_method": ["台钓", "海竿", "矶竿"],
+      "bait_types": ["玉米", "麦粒", "红薯", "商品饵", "蚯蚓"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃调整水层",
+        "low_oxygen": "溶氧<3mg/L摄食下降",
+        "pressure_drop": "气压骤降调整钓法",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "summer", "autumn"],
+      "active_depth": ["中", "深"],
+      "difficulty": "中级"
+    },
+    {
+      "name": "草鱼",
+      "scientific_name": "Ctenopharyngodon idella",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 18,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 32
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "弱",
+      "preferred_terrain": ["P3", "P4", "P6", "P7"],
+      "food_types": ["草食性", "水草", "陆生植物", "昆虫"],
+      "fishing_method": ["台钓", "浮钓", "海竿爆炸钩"],
+      "bait_types": ["嫩玉米", "芦苇芯", "蚂蚱", "青菜叶", "商品饵"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降50%",
+        "low_oxygen": "溶氧<3mg/L暗浮、停口",
+        "pressure_drop": "气压骤降暗浮",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["浅", "中"],
+      "difficulty": "中级"
+    },
+    {
+      "name": "鳜鱼",
+      "scientific_name": "Siniperca chuatsi",
+      "category": "冷水性",
+      "optimal_temp": {
+        "min": 12,
+        "max": 22
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 26
+      },
+      "optimal_do": 5.5,
+      "low_oxygen_tolerance": "弱",
+      "preferred_terrain": ["P2", "P4", "P5", "P6"],
+      "food_types": ["肉食性", "小鱼", "小虾", "水生昆虫"],
+      "fishing_method": ["路亚", "手竿活饵", "筏竿"],
+      "bait_types": ["活鱼", "泥鳅", "河虾", "软虫"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃应激反应明显",
+        "low_oxygen": "溶氧<3mg/L无法存活",
+        "pressure_drop": "需高溶氧环境",
+        "turbid_water": "停口"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["深", "结构区"],
+      "difficulty": "高级"
+    },
+    {
+      "name": "翘嘴",
+      "scientific_name": "Culter alburnus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 15,
+        "max": 25
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P1", "P2", "P3", "P4"],
+      "food_types": ["肉食性", "小鱼", "虾", "昆虫"],
+      "fishing_method": ["路亚", "浮钓", "飞铅"],
+      "bait_types": ["活虾", "小鱼", "蚯蚓", "软虫"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃食欲下降",
+        "low_oxygen": "溶氧<3mg/L停口",
+        "pressure_drop": "炸水短暂窗口期",
+        "turbid_water": "停口"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["浅", "中"],
+      "difficulty": "中级"
+    },
+    {
+      "name": "鲶鱼",
+      "scientific_name": "Silurus asotus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 18,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 32
+      },
+      "optimal_do": 3.5,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P4", "P5", "P8"],
+      "food_types": ["肉食性", "小鱼", "昆虫", "软体动物"],
+      "fishing_method": ["海竿", "手竿", "夜钓"],
+      "bait_types": ["鸡肝", "蚯蚓", "泥鳅", "小鱼"],
+      "stress_triggers": {
+        "temp_change": "温差>8℃才影响",
+        "low_oxygen": "耐低氧能力强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["深"],
+      "difficulty": "中级"
+    },
+    {
+      "name": "罗非鱼",
+      "scientific_name": "Oreochromis mossambicus",
+      "category": "热带性",
+      "optimal_temp": {
+        "min": 20,
+        "max": 30
+      },
+      "feeding_temp": {
+        "min": 15,
+        "max": 35
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P1", "P2", "P9"],
+      "food_types": ["杂食性", "藻类", "昆虫", "有机碎屑"],
+      "fishing_method": ["台钓", "手竿"],
+      "bait_types": ["蚯蚓", "红虫", "商品饵", "米饭"],
+      "stress_triggers": {
+        "temp_change": "温差>8℃才影响",
+        "low_oxygen": "耐低氧能力强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["浅", "中"],
+      "difficulty": "入门"
+    },
+    {
+      "name": "青鱼",
+      "scientific_name": "Mylopharyngodon piceus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 15,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.5,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P3", "P4", "P8"],
+      "food_types": ["肉食性", "螺蚌", "昆虫", "水生生物"],
+      "fishing_method": ["台钓", "海竿"],
+      "bait_types": ["螺蛳肉", "河蚌", "商品饵"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "溶氧<3mg/L摄食下降",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["深"],
+      "difficulty": "高级"
+    },
+    {
+      "name": "鳊鱼",
+      "scientific_name": "Parabramis pekinensis",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 15,
+        "max": 25
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 30
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P3", "P4", "P6"],
+      "food_types": ["杂食性", "水草", "昆虫", "藻类"],
+      "fishing_method": ["台钓", "手竿"],
+      "bait_types": ["商品饵", "蚯蚓", "红虫", "麦粒"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃停口",
+        "low_oxygen": "溶氧<3mg/L摄食下降",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["中"],
+      "difficulty": "入门"
+    },
+    {
+      "name": "黄颡鱼",
+      "scientific_name": "Pelteobagrus fulvidraco",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 18,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P4", "P5", "P8"],
+      "food_types": ["肉食性", "小鱼", "昆虫", "软体动物"],
+      "fishing_method": ["手竿", "海竿", "夜钓"],
+      "bait_types": ["鸡肝", "蚯蚓", "红虫", "小鱼"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "溶氧<3mg/L摄食下降",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["深"],
+      "difficulty": "中级"
+    },
+    {
+      "name": "马口",
+      "scientific_name": "Opsariichthys bidens",
+      "category": "冷水性",
+      "optimal_temp": {
+        "min": 10,
+        "max": 22
+      },
+      "feeding_temp": {
+        "min": 5,
+        "max": 26
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P1", "P2", "P4"],
+      "food_types": ["肉食性", "昆虫", "小鱼"],
+      "fishing_method": ["路亚", "手竿", "浮钓"],
+      "bait_types": ["活虾", "小鱼", "软虫", "蚯蚓"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "溶氧<4mg/L停口",
+        "pressure_drop": "影响较小",
+        "turbid_water": "停口"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["浅"],
+      "difficulty": "中级"
+    },
+    {
+      "name": "白条",
+      "scientific_name": "Hemiculter leucisculus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 15,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P1", "P2", "P3"],
+      "food_types": ["杂食性", "浮游生物", "昆虫", "藻类"],
+      "fishing_method": ["浮钓", "手竿", "长竿短线"],
+      "bait_types": ["蚯蚓", "红虫", "商品饵", "米粒"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "耐低氧能力强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "summer", "autumn"],
+      "active_depth": ["浅"],
+      "difficulty": "入门"
+    },
+    {
+      "name": "鲢鱼",
+      "scientific_name": "Hypophthalmichthys molitrix",
+      "category": "温水性",
+      "optimal_temp": {"min": 22, "max": 32},
+      "feeding_temp": {"min": 15, "max": 35},
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "弱",
+      "preferred_terrain": ["P1", "P2", "P3"],
+      "food_types": ["滤食性", "浮游植物", "藻类"],
+      "fishing_method": ["浮钓", "海竿", "台钓"],
+      "bait_types": ["酸臭饵", "发酵饵", "商品饵"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "溶氧<4mg/L上浮",
+        "pressure_drop": "气压骤降上浮",
+        "turbid_water": "惧风浪"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["浅", "中"],
+      "difficulty": "中级",
+      "notes": "中上层鱼类，常与鳙鱼混养"
+    },
+    {
+      "name": "鳙鱼",
+      "scientific_name": "Hypophthalmichthys nobilis",
+      "category": "温水性",
+      "optimal_temp": {"min": 22, "max": 30},
+      "feeding_temp": {"min": 15, "max": 33},
+      "optimal_do": 4.5,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P1", "P2", "P3"],
+      "food_types": ["滤食性", "浮游动物", "轮虫"],
+      "fishing_method": ["浮钓", "海竿", "台钓"],
+      "bait_types": ["酸臭饵", "发酵饵", "商品饵"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "对水质恶化敏感",
+        "pressure_drop": "气压骤降上浮",
+        "turbid_water": "对水质恶化敏感"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["浅", "中"],
+      "difficulty": "中级",
+      "notes": "又名花鲢、胖头鱼"
+    },
+    {
+      "name": "鲮鱼",
+      "scientific_name": "Cirrhinus molitorella",
+      "category": "温水性",
+      "optimal_temp": {"min": 25, "max": 30},
+      "feeding_temp": {"min": 15, "max": 35},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "较强",
+      "preferred_terrain": ["P1", "P4", "P7"],
+      "food_types": ["杂食性", "藻类", "有机碎屑"],
+      "fishing_method": ["台钓", "手竿"],
+      "bait_types": ["商品饵", "麦粒", "藻类饵"],
+      "stress_triggers": {
+        "temp_change": "水温<15℃停食",
+        "low_oxygen": "耐低氧能力较强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["中", "深"],
+      "difficulty": "中级",
+      "notes": "南方常见鱼种，又名土鲮"
+    },
+    {
+      "name": "乌鳢",
+      "scientific_name": "Channa argus",
+      "category": "温水性",
+      "optimal_temp": {"min": 20, "max": 28},
+      "feeding_temp": {"min": 5, "max": 35},
+      "optimal_do": 3.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P5", "P6"],
+      "food_types": ["肉食性", "小鱼", "青蛙", "昆虫"],
+      "fishing_method": ["路亚", "手竿活饵", "雷蛙"],
+      "bait_types": ["活鱼", "青蛙", "泥鳅", "雷蛙"],
+      "stress_triggers": {
+        "temp_change": "适应性较强",
+        "low_oxygen": "耐低氧，能呼吸空气",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["浅"],
+      "difficulty": "中级",
+      "notes": "又名黑鱼，护幼性强，产卵期难钓"
+    },
+    {
+      "name": "鳡鱼",
+      "scientific_name": "Elopichthys bambusa",
+      "category": "温水性",
+      "optimal_temp": {"min": 20, "max": 28},
+      "feeding_temp": {"min": 10, "max": 32},
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "弱",
+      "preferred_terrain": ["P1", "P2", "P3", "P4"],
+      "food_types": ["肉食性", "活鱼（掠食性极强）"],
+      "fishing_method": ["路亚", "拖钓"],
+      "bait_types": ["活鱼", "硬饵", "米诺"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "溶氧<4mg/L活动受限",
+        "pressure_drop": "影响中等",
+        "turbid_water": "停口"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["中"],
+      "difficulty": "高级",
+      "notes": "淡水霸主，爆发力极强"
+    },
+    {
+      "name": "大口黑鲈",
+      "scientific_name": "Micropterus salmoides",
+      "category": "温水性",
+      "optimal_temp": {"min": 20, "max": 30},
+      "feeding_temp": {"min": 1, "max": 36},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P4", "P5", "P6"],
+      "food_types": ["肉食性", "小鱼", "小虾", "昆虫"],
+      "fishing_method": ["路亚", "手竿"],
+      "bait_types": ["软虫", "硬饵", "活虾"],
+      "stress_triggers": {
+        "temp_change": "水温<10℃或>30℃摄食差",
+        "low_oxygen": "耐低氧能力中等",
+        "pressure_drop": "影响中等",
+        "turbid_water": "喜清澈水质"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["中"],
+      "difficulty": "中级",
+      "notes": "又名加州鲈，外来物种，仅限合法养殖水域垂钓",
+      "legal_warning": "入侵物种，严禁放流至自然水域"
+    },
+    {
+      "name": "虹鳟",
+      "scientific_name": "Oncorhynchus mykiss",
+      "category": "冷水性",
+      "optimal_temp": {"min": 13, "max": 18},
+      "feeding_temp": {"min": 7, "max": 24},
+      "optimal_do": 9.0,
+      "low_oxygen_tolerance": "极弱",
+      "preferred_terrain": ["P1", "P7"],
+      "food_types": ["肉食性", "水生昆虫", "小鱼"],
+      "fishing_method": ["路亚", "飞蝇钓", "手竿"],
+      "bait_types": ["拟饵", "昆虫", "鱼卵"],
+      "stress_triggers": {
+        "temp_change": "水温>24℃停食，>30℃死亡",
+        "low_oxygen": "需高溶氧(>6mg/L)",
+        "pressure_drop": "影响中等",
+        "turbid_water": "喜清澈水质"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["中", "深"],
+      "difficulty": "高级",
+      "notes": "冷水性鱼类，仅分布于高海拔冷水水域或养殖场"
+    },
+    {
+      "name": "蓝鳃太阳鱼",
+      "scientific_name": "Lepomis macrochirus",
+      "category": "温水性",
+      "optimal_temp": {"min": 26, "max": 31},
+      "feeding_temp": {"min": 1, "max": 40},
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P6", "P7"],
+      "food_types": ["杂食性", "水生昆虫", "小鱼", "植物"],
+      "fishing_method": ["路亚", "手竿"],
+      "bait_types": ["蚯蚓", "昆虫", "软虫"],
+      "stress_triggers": {
+        "temp_change": "水温<10℃活动减少",
+        "low_oxygen": "耐低氧能力强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["浅"],
+      "difficulty": "入门",
+      "notes": "外来物种，繁殖力极强",
+      "legal_warning": "入侵物种，严禁放流至自然水域"
+    },
+    {
+      "name": "巴西鲷",
+      "scientific_name": "Prochilodus lineatus",
+      "category": "温水性",
+      "optimal_temp": {"min": 26, "max": 32},
+      "feeding_temp": {"min": 9, "max": 39},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "极强",
+      "preferred_terrain": ["P3", "P8"],
+      "food_types": ["杂食性", "植物碎屑", "有机质"],
+      "fishing_method": ["台钓", "手竿"],
+      "bait_types": ["商品饵", "藻类饵", "植物饵"],
+      "stress_triggers": {
+        "temp_change": "水温<20℃食欲下降",
+        "low_oxygen": "窒息点极低(0.198mg/L)",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["深"],
+      "difficulty": "中级",
+      "notes": "南美引进品种，耐低氧能力极强"
+    },
+    {
+      "name": "梭鲈",
+      "scientific_name": "Sander lucioperca",
+      "category": "冷水性",
+      "optimal_temp": {"min": 18, "max": 24},
+      "feeding_temp": {"min": 10, "max": 28},
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P4", "P7"],
+      "food_types": ["肉食性", "小鱼（掠食性）"],
+      "fishing_method": ["路亚", "拖钓"],
+      "bait_types": ["活鱼", "硬饵", "软虫"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "溶氧<5mg/L停口",
+        "pressure_drop": "影响中等",
+        "turbid_water": "水质浑浊停口"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["深"],
+      "difficulty": "高级",
+      "notes": "喜清澈深水区域"
+    },
+    {
+      "name": "欧洲鳊",
+      "scientific_name": "Abramis brama",
+      "category": "温水性",
+      "optimal_temp": {"min": 15, "max": 22},
+      "feeding_temp": {"min": 4, "max": 30},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "较强",
+      "preferred_terrain": ["P3", "P8"],
+      "food_types": ["杂食性", "水生昆虫", "植物"],
+      "fishing_method": ["台钓", "手竿"],
+      "bait_types": ["蚯蚓", "玉米", "商品饵"],
+      "stress_triggers": {
+        "temp_change": "温差变化大时停口",
+        "low_oxygen": "耐低氧能力较强",
+        "pressure_drop": "影响中等",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["中", "深"],
+      "difficulty": "中级",
+      "notes": "欧洲常见品种，国内较少"
+    },
+    {
+      "name": "丁鱥",
+      "scientific_name": "Tinca tinca",
+      "category": "温水性",
+      "optimal_temp": {"min": 20, "max": 28},
+      "feeding_temp": {"min": 4, "max": 35},
+      "optimal_do": 3.0,
+      "low_oxygen_tolerance": "极强",
+      "preferred_terrain": ["P6", "P8"],
+      "food_types": ["杂食性", "底栖生物", "植物"],
+      "fishing_method": ["台钓", "手竿"],
+      "bait_types": ["蚯蚓", "玉米", "商品饵"],
+      "stress_triggers": {
+        "temp_change": "夏季高温需深水区",
+        "low_oxygen": "耐低氧能力极强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["深"],
+      "difficulty": "中级",
+      "notes": "又名丁桂，低温深水越冬"
+    },
+    {
+      "name": "革胡子鲶",
+      "scientific_name": "Clarias gariepinus",
+      "category": "温水性",
+      "optimal_temp": {"min": 22, "max": 30},
+      "feeding_temp": {"min": 12, "max": 35},
+      "optimal_do": 2.0,
+      "low_oxygen_tolerance": "极强",
+      "preferred_terrain": ["P4", "P8"],
+      "food_types": ["肉食性", "小鱼", "昆虫", "腐殖质"],
+      "fishing_method": ["手竿", "海竿", "夜钓"],
+      "bait_types": ["鸡肝", "蚯蚓", "小鱼", "腐肉"],
+      "stress_triggers": {
+        "temp_change": "水温<12℃停食",
+        "low_oxygen": "极强，能呼吸空气",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["深"],
+      "difficulty": "入门",
+      "notes": "又名埃及塘虱，外来物种",
+      "legal_warning": "入侵物种，严禁放流至自然水域"
+    },
+    {
+      "name": "斑点叉尾鮰",
+      "scientific_name": "Ictalurus punctatus",
+      "category": "温水性",
+      "optimal_temp": {"min": 20, "max": 28},
+      "feeding_temp": {"min": 10, "max": 32},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P4", "P8"],
+      "food_types": ["杂食性", "小鱼", "昆虫", "植物"],
+      "fishing_method": ["手竿", "海竿"],
+      "bait_types": ["蚯蚓", "鸡肝", "商品饵", "小鱼"],
+      "stress_triggers": {
+        "temp_change": "温差>8℃活性下降",
+        "low_oxygen": "耐低氧能力较强",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["深"],
+      "difficulty": "中级",
+      "notes": "又名沟鲶，美国引进品种"
+    },
+    {
+      "name": "淡水白鲳",
+      "scientific_name": "Colossoma brachypomum",
+      "category": "热带性",
+      "optimal_temp": {"min": 24, "max": 30},
+      "feeding_temp": {"min": 15, "max": 35},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": ["P3", "P6"],
+      "food_types": ["杂食性", "水果", "昆虫", "小鱼"],
+      "fishing_method": ["手竿", "海竿"],
+      "bait_types": ["水果", "商品饵", "蚯蚓", "小鱼"],
+      "stress_triggers": {
+        "temp_change": "水温<15℃停食",
+        "low_oxygen": "溶氧<3mg/L浮头",
+        "pressure_drop": "影响中等",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["summer"],
+      "active_depth": ["中"],
+      "difficulty": "中级",
+      "notes": "南美食人鱼近亲，牙齿锋利"
+    },
+    {
+      "name": "鳗鲡",
+      "scientific_name": "Anguilla japonica",
+      "category": "温水性",
+      "optimal_temp": {"min": 18, "max": 26},
+      "feeding_temp": {"min": 10, "max": 30},
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": ["P4", "P5", "P8"],
+      "food_types": ["肉食性", "小鱼", "虾", "水生昆虫"],
+      "fishing_method": ["手竿", "海竿", "夜钓"],
+      "bait_types": ["活虾", "蚯蚓", "小鱼", "鸡肝"],
+      "stress_triggers": {
+        "temp_change": "温差>5℃活性下降",
+        "low_oxygen": "耐低氧，可呼吸空气",
+        "pressure_drop": "影响较小",
+        "turbid_water": "影响较小"
+      },
+      "best_seasons": ["spring", "autumn"],
+      "active_depth": ["深"],
+      "difficulty": "高级",
+      "notes": "降河洄游鱼类，野生资源稀缺",
+      "protection_status": "部分区域禁钓"
+    }
+  ],
+  "stress_level_weights": {
+    "none": 1.0,
+    "light": 0.8,
+    "medium": 0.6,
+    "heavy": 0.5
+  },
+  "fishing_method_mapping": {
+    "台钓": {
+      "适合鱼种": ["鲫鱼", "鲤鱼", "草鱼", "鳊鱼"],
+      "竿长范围": [3.6, 4.5, 5.4, 6.3, 7.2],
+      "线组类型": [1.0, 1.5, 2.0, 3.0]
+    },
+    "路亚": {
+      "适合鱼种": ["鳜鱼", "翘嘴", "马口"],
+      "竿长范围": [1.8, 2.1, 2.4],
+      "饵型": ["软虫", "硬饵", "亮片"]
+    },
+    "海竿": {
+      "适合鱼种": ["鲤鱼", "草鱼", "青鱼", "鲶鱼"],
+      "竿长范围": [3.6, 4.5, 5.4],
+      "线组类型": [2.0, 3.0, 4.0]
+    },
+    "手竿": {
+      "适合鱼种": ["鲫鱼", "鳊鱼", "白条", "黄颡鱼"],
+      "竿长范围": [2.7, 3.6, 4.5],
+      "线组类型": [0.6, 0.8, 1.0]
+    }
+  },
+  "season_bait_preference": {
+    "spring": {
+      "推荐味型": ["腥香", "本味"],
+      "推荐状态": ["软黏", "散炮"]
+    },
+    "summer": {
+      "推荐味型": ["本味", "果酸", "清淡"],
+      "推荐状态": ["散炮", "轻麸"]
+    },
+    "autumn": {
+      "推荐味型": ["腥香", "藻腥"],
+      "推荐状态": ["散炮"]
+    },
+    "winter": {
+      "推荐味型": ["浓腥", "香精"],
+      "推荐状态": ["软黏"]
+    }
+  }
+}
