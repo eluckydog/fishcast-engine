@@ -50,7 +50,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 .geo-info .gi-l{color:#6b7394}
 .geo-info .gi-r{color:#a8b2d4}
 .autoget{font-size:.72em;color:#6b7394;text-align:center;margin:4px 0}
-@media(max-width:768px){.layout{flex-direction:column}.left{width:100%;max-height:60vh;border-right:0;border-bottom:1px solid #1e2540}#map{height:40vh}}
+.wi{background:#0d1120;border:1px solid #1a1f35;border-radius:6px;padding:8px;text-align:center}.wi-v{font-size:1em;font-weight:600;color:#e0e6f0}.wi-l{font-size:.65em;color:#6b7394;margin-top:1px}.weather-display{background:#111627;border:1px solid #2a3050;border-radius:8px;padding:10px}@media(max-width:768px){.layout{flex-direction:column}.left{width:100%;max-height:60vh;border-right:0;border-bottom:1px solid #1e2540}#map{height:40vh}}
 </style>
 </head>
 <body>
@@ -71,23 +71,22 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;b
 </div>
 
 <div class="panel">
-<h3>🌤️ 出钓条件</h3>
-<div class="row2">
-<div><label style="font-size:.72em;color:#6b7394">气温 (°C)</label><input type="number" id="tempInput" value="26"></div>
-<div><label style="font-size:.72em;color:#6b7394">气压 (hPa)</label><input type="number" id="presInput" value="1015"></div>
+<h3>🌤️ 实时天气 <span id="weatherStatus" style="font-size:.7em;color:#6b7394;font-weight:400">获取中...</span></h3>
+<div class="weather-display" id="weatherDisplay">
+<div style="text-align:center;padding:12px;color:#6b7394;font-size:.85em">📍 点击地图或允许定位以获取实时天气</div>
 </div>
-<div class="row2" style="margin-top:6px">
-<div><label style="font-size:.72em;color:#6b7394">天气</label>
-<select id="weatherSelect">
-<option>晴</option><option>多云</option><option>阴</option><option>小雨</option><option>中雨</option><option>大雨</option>
-</select></div>
-<div><label style="font-size:.72em;color:#6b7394">季节</label>
-<select id="seasonSelect">
-<option value="spring">春季</option><option value="summer" selected>夏季</option>
-<option value="autumn">秋季</option><option value="winter">冬季</option>
-</select></div>
 </div>
-<div style="text-align:center;margin:4px 0"><span id="weatherStatus" class="autoget">点击获取实时天气</span></div>
+
+<div class="panel">
+<h3>⏰ 出钓时间</h3>
+<select id="timeSelect">
+<option value="dawn">🌅 清晨 (4-7点) 【推荐】</option>
+<option value="morning" selected>☀️ 上午 (7-11点)</option>
+<option value="noon">🌤️ 中午 (11-14点)</option>
+<option value="afternoon">🌥️ 下午 (14-17点)</option>
+<option value="dusk">🌇 黄昏 (17-20点) 【推荐】</option>
+<option value="night">🌙 夜间 (20-4点)</option>
+</select>
 </div>
 
 <div class="panel">
@@ -199,31 +198,42 @@ async function queryWater(lat, lng) {
 }
 
 async function fetchWeather(lat, lng) {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,relative_humidity_2m,pressure_msl,weather_code,wind_speed_10m`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,relative_humidity_2m,pressure_msl,weather_code,wind_speed_10m,wind_direction_10m&daily=temperature_2m_max,temperature_2m_min&timezone=auto`;
     try {
         const resp = await fetch(url);
         const data = await resp.json();
         const c = data.current;
-        document.getElementById("tempInput").value = Math.round(c.temperature_2m);
-        document.getElementById("presInput").value = Math.round(c.pressure_msl);
-        const wc = c.weather_code;
-        if (wc <= 2) document.getElementById("weatherSelect").value = "晴";
-        else if (wc <= 3) document.getElementById("weatherSelect").value = "多云";
-        else if (wc <= 48) document.getElementById("weatherSelect").value = "阴";
-        else if (wc <= 56) document.getElementById("weatherSelect").value = "小雨";
-        else document.getElementById("weatherSelect").value = "小雨";
-        document.getElementById("weatherStatus").textContent = `✅ ${c.temperature_2m}°C 已自动获取`;
+        const d = data.daily;
+        const w = {0:"sunny",1:"sunny",2:"cloudy",3:"overcast",45:"foggy",48:"foggy",51:"drizzly",53:"drizzly",55:"drizzly",61:"rainy",63:"rainy",65:"rainy",80:"rainy",81:"rainy",82:"rainy",95:"stormy",96:"stormy",99:"stormy"};
+        const we = w[c.weather_code]||"sunny";
+        const wd = ["N","NE","E","SE","S","SW","W","NW"][Math.round((c.wind_direction_10m||0)/45)%8];
+        document.getElementById("weatherDisplay").innerHTML =
+            '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px">' +
+            '<div class="wi"><div class="wi-v">'+Math.round(c.temperature_2m)+'&deg;C</div><div class="wi-l">TEMPERATURE</div></div>' +
+            '<div class="wi"><div class="wi-v">'+Math.round(c.pressure_msl)+' hPa</div><div class="wi-l">PRESSURE</div></div>' +
+            '<div class="wi"><div class="wi-v">'+c.relative_humidity_2m+'%</div><div class="wi-l">HUMIDITY</div></div>' +
+            '</div>' +
+            '<div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px">' +
+            '<div class="wi"><div class="wi-v">'+we+'</div><div class="wi-l">WEATHER</div></div>' +
+            '<div class="wi"><div class="wi-v">'+c.wind_speed_10m+'km/h '+wd+'</div><div class="wi-l">WIND</div></div>' +
+            '</div>' +
+            (d?'<div style="margin-top:6px;font-size:.72em;color:#6b7394;text-align:center">Today '+Math.round(d.temperature_2m_min[0])+'~'+Math.round(d.temperature_2m_max[0])+'&deg;C</div>':'');
+        document.getElementById("weatherStatus").textContent = "UPDATED";
     } catch(e) {
-        document.getElementById("weatherStatus").textContent = "天气获取失败，手动填写";
+        document.getElementById("weatherDisplay").innerHTML = '<div style="text-align:center;padding:12px;color:#e74c3c;font-size:.82em">Weather unavailable</div>';
+        document.getElementById("weatherStatus").textContent = "FAILED";
     }
 }
 
 function evaluate() {
     const name = document.getElementById("fishSelect").value;
-    const temp = parseFloat(document.getElementById("tempInput").value) || 20;
-    const pres = parseFloat(document.getElementById("presInput").value) || 1013;
-    const weather = document.getElementById("weatherSelect").value;
-    const season = document.getElementById("seasonSelect").value;
+    const wt = document.getElementById("weatherDisplay").innerText;
+    let temp=20, pres=1013;
+    const tm = wt.match(/(\d+)°C/); if(tm) temp=+tm[1];
+    const pm = wt.match(/(\d+)\s?hPa/); if(pm) pres=+pm[1];
+    const weather = wt.includes("rain")||wt.includes("rainy")||wt.includes("drizzly") ? "rain" : (wt.includes("overcast")||wt.includes("fog") ? "overcast" : "sunny");
+    const month = new Date().getMonth();
+    const season = (month>=2&&month<=4)?"spring":(month>=5&&month<=8)?"summer":(month>=9&&month<=10)?"autumn":"winter";
     
     const fish = speciesList.find(f => f.name === name);
     if (!fish) { document.getElementById("resultArea").innerHTML = '<div class="result-box">未找到鱼种数据</div>'; return; }
