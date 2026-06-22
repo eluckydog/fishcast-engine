@@ -2256,6 +2256,2287 @@
       ],
       "difficulty": "中等",
       "notes": ""
+    },
+    {
+      "name": "黄尾鲴",
+      "scientific_name": "Xenocypris davidi",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "P3",
+        "P4",
+        "P6"
+      ],
+      "food_types": [
+        "藻类",
+        "有机碎屑",
+        "底栖生物"
+      ],
+      "fishing_method": [
+        "手竿",
+        "溪流竿"
+      ],
+      "bait_types": [
+        "商品饵",
+        "蚯蚓",
+        "藻饵"
+      ],
+      "hook": {
+        "types": [
+          "袖钩",
+          "伊豆"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.0-1.5",
+        "sub_line": "0.4-0.8",
+        "rod": "溪流竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮",
+          "米糠"
+        ],
+        "method": "打轻窝"
+      },
+      "recommended_bait": "藻饵/细蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "黄尾嘴小，用细钩细线"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "花鲴",
+      "scientific_name": "Hemibarbus maculatus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "food_types": [
+        "底栖生物",
+        "昆虫幼虫"
+      ],
+      "fishing_method": [
+        "手竿"
+      ],
+      "bait_types": [
+        "蚯蚓",
+        "红虫",
+        "商品饵"
+      ],
+      "hook": {
+        "types": [
+          "伊豆",
+          "袖钩"
+        ],
+        "size": "4-6号"
+      },
+      "rigging": {
+        "main_line": "1.2-2.0",
+        "sub_line": "0.6-1.0",
+        "rod": "综合竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "酒米",
+          "麸皮"
+        ],
+        "method": "打底窝"
+      },
+      "recommended_bait": "蚯蚓/红虫",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调平水",
+        "key_point": "花鲴吃口轻，注意看漂"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "棒花鱼",
+      "scientific_name": "Abbottina rivularis",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "food_types": [
+        "底栖生物",
+        "藻类"
+      ],
+      "fishing_method": [
+        "手竿"
+      ],
+      "bait_types": [
+        "细蚯蚓",
+        "红虫",
+        "商品饵"
+      ],
+      "hook": {
+        "types": [
+          "极细袖",
+          "秋田狐"
+        ],
+        "size": "0.5-1号"
+      },
+      "rigging": {
+        "main_line": "0.4-0.8",
+        "sub_line": "0.2-0.4",
+        "rod": "鲫鱼竿2.7-3.6m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "细红虫",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小漂",
+        "key_point": "棒花鱼群居，找到窝子能连竿"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "船钉鱼",
+      "scientific_name": "Saurogobio gymnocheilus",
+      "category": "温水性",
+      "optimal_temp": {
+        "min": 16,
+        "max": 24
+      },
+      "feeding_temp": {
+        "min": 6,
+        "max": 28
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "P1",
+        "P4",
+        "P5"
+      ],
+      "food_types": [
+        "藻类",
+        "底栖生物"
+      ],
+      "fishing_method": [
+        "手竿"
+      ],
+      "bait_types": [
+        "细蚯蚓",
+        "商品饵"
+      ],
+      "hook": {
+        "types": [
+          "极细袖"
+        ],
+        "size": "0.5-1号"
+      },
+      "rigging": {
+        "main_line": "0.4-0.6",
+        "sub_line": "0.2-0.4",
+        "rod": "溪流竿2.7-3.6m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "细蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小漂",
+        "key_point": "船钉喜欢沙底急流"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "沙塘鳢",
+      "scientific_name": "Odontobutis obscura",
+      "category": "底层凶猛",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "P1",
+        "P4",
+        "P8"
+      ],
+      "food_types": [
+        "小虾",
+        "小鱼",
+        "昆虫"
+      ],
+      "fishing_method": [
+        "手竿"
+      ],
+      "bait_types": [
+        "小虾",
+        "蚯蚓"
+      ],
+      "hook": {
+        "types": [
+          "丸世",
+          "长柄钩"
+        ],
+        "size": "4-6号"
+      },
+      "rigging": {
+        "main_line": "1.0-1.5",
+        "sub_line": "0.6-0.8",
+        "rod": "短竿2.7-3.6m"
+      },
+      "chumming": {
+        "base": [
+          "虾粉",
+          "腥料"
+        ],
+        "method": "少量腥窝"
+      },
+      "recommended_bait": "小虾/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调平水",
+        "key_point": "沙塘鳢伏击捕食，饵要动态"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "虾虎鱼",
+      "scientific_name": "Rhinogobius giurinus",
+      "category": "底层小型",
+      "optimal_temp": {
+        "min": 18,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "极强",
+      "preferred_terrain": [
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "food_types": [
+        "小虾",
+        "昆虫",
+        "藻类"
+      ],
+      "fishing_method": [
+        "手竿"
+      ],
+      "bait_types": [
+        "细蚯蚓",
+        "红虫"
+      ],
+      "hook": {
+        "types": [
+          "极细袖",
+          "秋田狐"
+        ],
+        "size": "0.5-2号"
+      },
+      "rigging": {
+        "main_line": "0.4-0.8",
+        "sub_line": "0.2-0.4",
+        "rod": "短竿1.8-2.7m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮",
+          "虾粉"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "细红虫",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小漂",
+        "key_point": "虾虎吃钩深，摘钩麻烦"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "中华刺鳅",
+      "scientific_name": "Mastacembelus aculeatus",
+      "category": "底层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 30
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "P4",
+        "P5",
+        "P8"
+      ],
+      "food_types": [
+        "底栖生物",
+        "昆虫幼虫"
+      ],
+      "fishing_method": [
+        "手竿"
+      ],
+      "bait_types": [
+        "蚯蚓",
+        "红虫"
+      ],
+      "hook": {
+        "types": [
+          "长柄钩",
+          "丸世"
+        ],
+        "size": "4-6号"
+      },
+      "rigging": {
+        "main_line": "1.0-1.5",
+        "sub_line": "0.4-0.8",
+        "rod": "手竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "红虫",
+          "蚯蚓段"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "整条红蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小漂",
+        "key_point": "刺鳅吃钩拖漂即提"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "泥鳅",
+      "scientific_name": "Misgurnus anguillicaudatus",
+      "category": "底栖",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 5,
+        "max": 35
+      },
+      "optimal_do": 3.0,
+      "low_oxygen_tolerance": "极强",
+      "preferred_terrain": [
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "food_types": [
+        "有机碎屑",
+        "昆虫",
+        "藻类"
+      ],
+      "fishing_method": [
+        "手竿",
+        "地笼"
+      ],
+      "bait_types": [
+        "蚯蚓",
+        "商品饵"
+      ],
+      "hook": {
+        "types": [
+          "细袖",
+          "秋田狐"
+        ],
+        "size": "1-3号"
+      },
+      "rigging": {
+        "main_line": "0.6-1.0",
+        "sub_line": "0.4-0.6",
+        "rod": "短竿2.7-3.6m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮",
+          "米糠"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "细蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小漂",
+        "key_point": "泥鳅滑，用细条钩"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "光唇鱼",
+      "scientific_name": "Acrossocheilus fasciatus",
+      "category": "溪流",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 6.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "P1",
+        "P4",
+        "P6"
+      ],
+      "food_types": [
+        "青苔",
+        "藻类",
+        "昆虫"
+      ],
+      "fishing_method": [
+        "溪流竿"
+      ],
+      "bait_types": [
+        "苔藓饵",
+        "商品饵",
+        "蚯蚓"
+      ],
+      "hook": {
+        "types": [
+          "溪流钩",
+          "伊豆"
+        ],
+        "size": "2-4号"
+      },
+      "rigging": {
+        "main_line": "0.8-1.2",
+        "sub_line": "0.4-0.6",
+        "rod": "溪流竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮",
+          "水草"
+        ],
+        "method": "轻窝"
+      },
+      "recommended_bait": "苔藓团",
+      "technique": {
+        "method": "溪流底钓",
+        "float_tuning": "大肚漂",
+        "key_point": "光唇鱼劲足需遛"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "赤眼鳟",
+      "scientific_name": "Squalibbarbus curriculus",
+      "category": "中上层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "P1",
+        "P3",
+        "P4"
+      ],
+      "food_types": [
+        "植物",
+        "昆虫",
+        "小虾"
+      ],
+      "fishing_method": [
+        "手竿",
+        "路亚"
+      ],
+      "bait_types": [
+        "商品饵",
+        "嫩玉米",
+        "亮片"
+      ],
+      "hook": {
+        "types": [
+          "伊豆",
+          "袖钩"
+        ],
+        "size": "4-6号"
+      },
+      "rigging": {
+        "main_line": "1.5-2.0",
+        "sub_line": "0.8-1.2",
+        "rod": "综合竿4.5-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "麸皮"
+        ],
+        "method": "适量"
+      },
+      "recommended_bait": "嫩玉米/商品饵",
+      "technique": {
+        "method": "离底钓",
+        "float_tuning": "调5钓3",
+        "key_point": "赤眼鳟劲大，遛鱼小心"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "黑鲷",
+      "scientific_name": "Acanthopagrus schlegelii",
+      "category": "海水底栖",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "礁石",
+        "沙泥底"
+      ],
+      "food_types": [
+        "小虾",
+        "贝类",
+        "沙蚕"
+      ],
+      "fishing_method": [
+        "矶钓",
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "小虾",
+        "南极虾"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊势尼"
+        ],
+        "size": "3-6号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.5-2.0",
+        "rod": "矶竿5.3m/船钓竿"
+      },
+      "chumming": {
+        "base": [
+          "南极虾砖",
+          "虾粉"
+        ],
+        "method": "打诱饵粉"
+      },
+      "recommended_bait": "沙蚕/南极虾",
+      "technique": {
+        "method": "矶钓浮游",
+        "float_tuning": "阿波0.8-1.5",
+        "key_point": "黑鲷狡猾，吃口轻"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "真鲷",
+      "scientific_name": "Pagrus major",
+      "category": "海水底栖",
+      "optimal_temp": {
+        "min": 16,
+        "max": 24
+      },
+      "feeding_temp": {
+        "min": 6,
+        "max": 28
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "礁石",
+        "沙泥底"
+      ],
+      "food_types": [
+        "小虾",
+        "贝类",
+        "蟹"
+      ],
+      "fishing_method": [
+        "矶钓",
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "小虾",
+        "小鱼段"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊势尼"
+        ],
+        "size": "4-7号"
+      },
+      "rigging": {
+        "main_line": "2.5-4.0",
+        "sub_line": "1.5-3.0",
+        "rod": "矶竿5.3m/船钓竿"
+      },
+      "chumming": {
+        "base": [
+          "南极虾",
+          "虾砖"
+        ],
+        "method": "打诱饵"
+      },
+      "recommended_bait": "南极虾/小活虾",
+      "technique": {
+        "method": "矶钓浮游",
+        "float_tuning": "阿波",
+        "key_point": "真鲷拉力大，需遛鱼"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "黄鳍鲷",
+      "scientific_name": "Acanthopagrus latus",
+      "category": "海水底栖",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "礁石",
+        "河口"
+      ],
+      "food_types": [
+        "小虾",
+        "沙蚕",
+        "藻类"
+      ],
+      "fishing_method": [
+        "矶钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "小虾",
+        "虾肉"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊豆"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.5-2.5",
+        "sub_line": "1.0-1.5",
+        "rod": "矶竿4.5-5.3m"
+      },
+      "chumming": {
+        "base": [
+          "虾粉",
+          "南极虾"
+        ],
+        "method": "打诱饵"
+      },
+      "recommended_bait": "沙蚕",
+      "technique": {
+        "method": "浮游矶钓",
+        "float_tuning": "阿波",
+        "key_point": "黄鳍鲷比黑鲷更谨慎"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "石斑鱼",
+      "scientific_name": "Epinephelus spp.",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 22,
+        "max": 30
+      },
+      "feeding_temp": {
+        "min": 15,
+        "max": 34
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "礁石",
+        "沉船",
+        "岩缝"
+      ],
+      "food_types": [
+        "小鱼",
+        "章鱼",
+        "蟹"
+      ],
+      "fishing_method": [
+        "船钓",
+        "重矶"
+      ],
+      "bait_types": [
+        "活鱼",
+        "鱿鱼",
+        "虾"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊势尼",
+          "管付"
+        ],
+        "size": "6-12号"
+      },
+      "rigging": {
+        "main_line": "5.0-8.0",
+        "sub_line": "4.0-6.0",
+        "rod": "船钓竿/重矶竿"
+      },
+      "chumming": {
+        "base": [
+          "鱼块",
+          "鱿鱼"
+        ],
+        "method": "重饵诱鱼"
+      },
+      "recommended_bait": "活鱼/鱿鱼段",
+      "technique": {
+        "method": "船钓底钓",
+        "float_tuning": "看竿尖",
+        "key_point": "石斑钻洞，鱼一咬要猛提"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "鲅鱼(蓝点马鲛)",
+      "scientific_name": "Scomberomorus niphonius",
+      "category": "海水上层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 6.0,
+      "low_oxygen_tolerance": "怕缺氧",
+      "preferred_terrain": [
+        "开阔海面",
+        "近海"
+      ],
+      "food_types": [
+        "小鱼",
+        "鱿鱼"
+      ],
+      "fishing_method": [
+        "路亚",
+        "拖钓",
+        "船钓"
+      ],
+      "bait_types": [
+        "铁板",
+        "米诺",
+        "活鱼"
+      ],
+      "hook": {
+        "types": [
+          "曲柄钩",
+          "三本钩"
+        ],
+        "size": "4/0-8/0"
+      },
+      "rigging": {
+        "main_line": "3.0-5.0(PE)",
+        "sub_line": "-",
+        "rod": "路亚竿MH-XH/拖钓竿"
+      },
+      "chumming": {
+        "base": [
+          "不需打窝"
+        ],
+        "method": "找鱼群"
+      },
+      "recommended_bait": "铁板/波扒",
+      "technique": {
+        "method": "路亚铁板",
+        "float_tuning": "无",
+        "key_point": "鲅鱼高速追饵，收线要快"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "带鱼",
+      "scientific_name": "Trichiurus lepturus",
+      "category": "海水中层",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "近海",
+        "泥沙底"
+      ],
+      "food_types": [
+        "小鱼",
+        "鱿鱼",
+        "虾"
+      ],
+      "fishing_method": [
+        "船钓",
+        "延绳"
+      ],
+      "bait_types": [
+        "鱿鱼条",
+        "小鱼段"
+      ],
+      "hook": {
+        "types": [
+          "长柄钩",
+          "丸世"
+        ],
+        "size": "5-8号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.5-2.0",
+        "rod": "船钓竿"
+      },
+      "chumming": {
+        "base": [
+          "不需打窝"
+        ],
+        "method": "夜钓"
+      },
+      "recommended_bait": "鱿鱼条",
+      "technique": {
+        "method": "船钓底钓",
+        "float_tuning": "看竿尖",
+        "key_point": "带鱼夜间更活跃"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "大黄鱼",
+      "scientific_name": "Larimichthys crocea",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "近海",
+        "泥沙底"
+      ],
+      "food_types": [
+        "小鱼",
+        "虾",
+        "蟹"
+      ],
+      "fishing_method": [
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "虾",
+        "小鱼",
+        "沙蚕"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊势尼"
+        ],
+        "size": "4-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "船钓竿/岸钓竿"
+      },
+      "chumming": {
+        "base": [
+          "南极虾",
+          "虾砖"
+        ],
+        "method": "打窝诱鱼"
+      },
+      "recommended_bait": "虾肉/沙蚕",
+      "technique": {
+        "method": "船钓底钓",
+        "float_tuning": "小阿波",
+        "key_point": "大黄鱼叫声大，出水前会咕咕叫"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "小黄鱼",
+      "scientific_name": "Larimichthys polyactis",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 16,
+        "max": 24
+      },
+      "feeding_temp": {
+        "min": 6,
+        "max": 28
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "近海",
+        "泥沙底"
+      ],
+      "food_types": [
+        "小虾",
+        "小鱼",
+        "底栖生物"
+      ],
+      "fishing_method": [
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "虾肉"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊豆"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.5-2.0",
+        "sub_line": "1.0-1.5",
+        "rod": "船钓竿/岸钓竿"
+      },
+      "chumming": {
+        "base": [
+          "南极虾",
+          "虾砖"
+        ],
+        "method": "打窝"
+      },
+      "recommended_bait": "沙蚕/虾肉",
+      "technique": {
+        "method": "船钓底钓",
+        "float_tuning": "阿波",
+        "key_point": "小黄鱼体型小，用细钩"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "鲻鱼",
+      "scientific_name": "Mugil cephalus",
+      "category": "海水上层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "河口",
+        "内湾",
+        "港口"
+      ],
+      "food_types": [
+        "藻类",
+        "有机碎屑",
+        "泥沙"
+      ],
+      "fishing_method": [
+        "岸钓",
+        "滩钓"
+      ],
+      "bait_types": [
+        "面团",
+        "商品饵",
+        "沙蚕"
+      ],
+      "hook": {
+        "types": [
+          "丸世",
+          "长柄钩"
+        ],
+        "size": "4-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-1.8",
+        "rod": "滩钓竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮",
+          "米糠"
+        ],
+        "method": "打诱饵"
+      },
+      "recommended_bait": "面团/面包",
+      "technique": {
+        "method": "浮钓",
+        "float_tuning": "大肚漂",
+        "key_point": "鲻鱼吃饵漂相特别，先点后沉"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "海鲈鱼",
+      "scientific_name": "Lateolabrax japonicus",
+      "category": "海水中层",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "礁石",
+        "河口",
+        "防波堤"
+      ],
+      "food_types": [
+        "小鱼",
+        "虾",
+        "鱿鱼"
+      ],
+      "fishing_method": [
+        "路亚",
+        "矶钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "活鱼",
+        "米诺",
+        "软虫"
+      ],
+      "hook": {
+        "types": [
+          "曲柄钩",
+          "千又"
+        ],
+        "size": "4-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-4.0",
+        "sub_line": "1.5-2.5",
+        "rod": "路亚竿M-MH/矶竿"
+      },
+      "chumming": {
+        "base": [
+          "不需打窝"
+        ],
+        "method": "找标点"
+      },
+      "recommended_bait": "活虾/米诺",
+      "technique": {
+        "method": "路亚/浮游矶",
+        "float_tuning": "无/阿波",
+        "key_point": "海鲈爆发力强，第一冲要顶住"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "金枪鱼",
+      "scientific_name": "Thunnus spp.",
+      "category": "海水上层",
+      "optimal_temp": {
+        "min": 22,
+        "max": 30
+      },
+      "feeding_temp": {
+        "min": 15,
+        "max": 34
+      },
+      "optimal_do": 7.0,
+      "low_oxygen_tolerance": "怕缺氧",
+      "preferred_terrain": [
+        "远海",
+        "深海"
+      ],
+      "food_types": [
+        "小鱼",
+        "鱿鱼"
+      ],
+      "fishing_method": [
+        "拖钓",
+        "铁板"
+      ],
+      "bait_types": [
+        "活鱼",
+        "铁板",
+        "波扒"
+      ],
+      "hook": {
+        "types": [
+          "三本钩",
+          "金枪钩"
+        ],
+        "size": "6/0-12/0"
+      },
+      "rigging": {
+        "main_line": "5.0-8.0(PE)",
+        "sub_line": "-",
+        "rod": "拖钓竿/重型铁板竿"
+      },
+      "chumming": {
+        "base": [
+          "不需打窝"
+        ],
+        "method": "找鸟群/鱼群"
+      },
+      "recommended_bait": "活鱼/铁板",
+      "technique": {
+        "method": "拖钓/铁板",
+        "float_tuning": "无",
+        "key_point": "金枪鱼是耐力之王，遛鱼以小时计"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "马鲛鱼",
+      "scientific_name": "Scomberomorus spp.",
+      "category": "海水上层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 30
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 34
+      },
+      "optimal_do": 6.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "远海",
+        "近海"
+      ],
+      "food_types": [
+        "小鱼",
+        "鱿鱼"
+      ],
+      "fishing_method": [
+        "路亚",
+        "拖钓"
+      ],
+      "bait_types": [
+        "铁板",
+        "米诺",
+        "小鱼"
+      ],
+      "hook": {
+        "types": [
+          "三本钩",
+          "曲柄钩"
+        ],
+        "size": "4/0-8/0"
+      },
+      "rigging": {
+        "main_line": "3.0-5.0(PE)",
+        "sub_line": "-",
+        "rod": "路亚竿MH/拖钓竿"
+      },
+      "chumming": {
+        "base": [
+          "不需打窝"
+        ],
+        "method": "找鱼群"
+      },
+      "recommended_bait": "铁板/米诺",
+      "technique": {
+        "method": "路亚/拖钓",
+        "float_tuning": "无",
+        "key_point": "马鲛牙齿锋利，要用钢丝前导"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "红衫鱼",
+      "scientific_name": "Lutjanus erythropterus",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 32
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "岩礁",
+        "沙泥底"
+      ],
+      "food_types": [
+        "小鱼",
+        "虾",
+        "蟹"
+      ],
+      "fishing_method": [
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "虾肉",
+        "小鱼段",
+        "沙蚕"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊势尼"
+        ],
+        "size": "4-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "船钓竿"
+      },
+      "chumming": {
+        "base": [
+          "南极虾",
+          "虾砖"
+        ],
+        "method": "打诱饵"
+      },
+      "recommended_bait": "虾肉",
+      "technique": {
+        "method": "船钓底钓",
+        "float_tuning": "阿波",
+        "key_point": "红衫鱼群居，找到鱼群爽拉"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "金线鱼",
+      "scientific_name": "Nemipterus virgatus",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 30
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "沙泥底",
+        "岩礁"
+      ],
+      "food_types": [
+        "小虾",
+        "小鱼",
+        "底栖生物"
+      ],
+      "fishing_method": [
+        "船钓"
+      ],
+      "bait_types": [
+        "虾肉",
+        "沙蚕",
+        "南极虾"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊豆"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.5-2.5",
+        "sub_line": "1.0-1.5",
+        "rod": "船钓竿/手丝"
+      },
+      "chumming": {
+        "base": [
+          "南极虾",
+          "虾砖"
+        ],
+        "method": "打诱饵"
+      },
+      "recommended_bait": "南极虾/虾肉",
+      "technique": {
+        "method": "船钓底钓",
+        "float_tuning": "看竿尖",
+        "key_point": "金线鱼体型小，细钩细线"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "乌头鱼(鲻鱼)",
+      "scientific_name": "Mugil cephalus",
+      "category": "海水上层",
+      "optimal_temp": {
+        "min": 20,
+        "max": 28
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "河口",
+        "内湾"
+      ],
+      "food_types": [
+        "藻类",
+        "泥沙有机质"
+      ],
+      "fishing_method": [
+        "岸钓",
+        "滩钓"
+      ],
+      "bait_types": [
+        "面团",
+        "面粉饵",
+        "沙蚕"
+      ],
+      "hook": {
+        "types": [
+          "丸世",
+          "长柄钩"
+        ],
+        "size": "5-8号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-1.8",
+        "rod": "滩钓竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "麸皮",
+          "米糠"
+        ],
+        "method": "打窝诱鱼"
+      },
+      "recommended_bait": "面团",
+      "technique": {
+        "method": "浮钓/底钓",
+        "float_tuning": "大肚漂",
+        "key_point": "乌头洗鳃厉害，遛鱼控好角度"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "河豚",
+      "scientific_name": "Takifugu spp.",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 10,
+        "max": 32
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "沙泥底",
+        "岩礁"
+      ],
+      "food_types": [
+        "贝类",
+        "小虾",
+        "蟹"
+      ],
+      "fishing_method": [
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "虾肉",
+        "贝肉",
+        "沙蚕"
+      ],
+      "hook": {
+        "types": [
+          "细千又",
+          "丸世"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.0-1.5",
+        "sub_line": "0.6-1.0",
+        "rod": "手竿/小船竿"
+      },
+      "chumming": {
+        "base": [
+          "虾肉碎"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "虾肉",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小漂",
+        "key_point": "河豚咬钩直接吞，注意有毒"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "剥皮鱼(马面鲀)",
+      "scientific_name": "Thamnaconus modestus",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "岩礁",
+        "沙泥底"
+      ],
+      "food_types": [
+        "底栖生物",
+        "藻类",
+        "小虾"
+      ],
+      "fishing_method": [
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "虾肉",
+        "鱿鱼丝",
+        "沙蚕"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "丸世"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.5-2.0",
+        "sub_line": "0.8-1.2",
+        "rod": "船钓竿/手竿"
+      },
+      "chumming": {
+        "base": [
+          "虾粉",
+          "南极虾"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "虾肉段",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "小阿波",
+        "key_point": "剥皮鱼嘴小，用小钩"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "乌贼(章鱼/八爪鱼)",
+      "scientific_name": "Octopus spp.",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 18,
+        "max": 26
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 30
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "强",
+      "preferred_terrain": [
+        "礁石",
+        "沙泥底",
+        "沉船"
+      ],
+      "food_types": [
+        "蟹",
+        "贝类",
+        "小鱼"
+      ],
+      "fishing_method": [
+        "船钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "虾肉",
+        "蟹肉",
+        "假饵"
+      ],
+      "hook": {
+        "types": [
+          "八爪钩",
+          "千又"
+        ],
+        "size": "6-10号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "-",
+        "rod": "船钓竿"
+      },
+      "chumming": {
+        "base": [
+          "不需打窝"
+        ],
+        "method": "找礁石区"
+      },
+      "recommended_bait": "虾肉/蟹肉",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "看竿尖",
+        "key_point": "八爪鱼八条腿缠住就不放"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "海鲶鱼(海鲇)",
+      "scientific_name": "Arius sinensis",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 22,
+        "max": 30
+      },
+      "feeding_temp": {
+        "min": 12,
+        "max": 34
+      },
+      "optimal_do": 3.0,
+      "low_oxygen_tolerance": "极强",
+      "preferred_terrain": [
+        "河口",
+        "内湾",
+        "泥沙底"
+      ],
+      "food_types": [
+        "小鱼",
+        "虾",
+        "蟹",
+        "有机碎屑"
+      ],
+      "fishing_method": [
+        "岸钓",
+        "滩钓",
+        "船钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "虾肉",
+        "小鱼段"
+      ],
+      "hook": {
+        "types": [
+          "长柄钩",
+          "丸世",
+          "伊势尼"
+        ],
+        "size": "5-8号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "滩钓竿3.6-4.5m"
+      },
+      "chumming": {
+        "base": [
+          "鱼内脏碎",
+          "虾壳"
+        ],
+        "method": "重窝"
+      },
+      "recommended_bait": "沙蚕/鸡肝",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "看竿尖",
+        "key_point": "海鲶吃口凶狠，鱼鳍有硬刺"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "石狗公",
+      "scientific_name": "Sebastiscus marmoratus",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 16,
+        "max": 24
+      },
+      "feeding_temp": {
+        "min": 8,
+        "max": 28
+      },
+      "optimal_do": 5.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "岩石岸",
+        "礁石缝"
+      ],
+      "food_types": [
+        "小虾",
+        "小鱼",
+        "蟹"
+      ],
+      "fishing_method": [
+        "矶钓",
+        "岸钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "虾肉",
+        "小活虾"
+      ],
+      "hook": {
+        "types": [
+          "千又",
+          "伊豆"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.5-2.5",
+        "sub_line": "0.8-1.5",
+        "rod": "矶竿5.3m"
+      },
+      "chumming": {
+        "base": [
+          "南极虾",
+          "虾粉"
+        ],
+        "method": "打诱饵"
+      },
+      "recommended_bait": "沙蚕/虾肉",
+      "technique": {
+        "method": "矶钓底钓",
+        "float_tuning": "阿波B-2B",
+        "key_point": "石狗公在礁石底，注意挂底"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
+    },
+    {
+      "name": "虎头鱼(褐菖鲉)",
+      "scientific_name": "Sebastiscus marmoratus",
+      "category": "海水底层",
+      "optimal_temp": {
+        "min": 16,
+        "max": 24
+      },
+      "feeding_temp": {
+        "min": 6,
+        "max": 28
+      },
+      "optimal_do": 4.0,
+      "low_oxygen_tolerance": "中",
+      "preferred_terrain": [
+        "岩礁",
+        "防波堤"
+      ],
+      "food_types": [
+        "小虾",
+        "小鱼"
+      ],
+      "fishing_method": [
+        "岸钓",
+        "矶钓"
+      ],
+      "bait_types": [
+        "沙蚕",
+        "虾肉"
+      ],
+      "hook": {
+        "types": [
+          "千又"
+        ],
+        "size": "3-5号"
+      },
+      "rigging": {
+        "main_line": "1.2-2.0",
+        "sub_line": "0.8-1.2",
+        "rod": "矶竿/手竿"
+      },
+      "chumming": {
+        "base": [
+          "虾粉",
+          "南极虾"
+        ],
+        "method": "少量"
+      },
+      "recommended_bait": "沙蚕/虾肉",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "阿波",
+        "key_point": "虎头鱼背鳍有毒刺，摘钩小心"
+      },
+      "stress_triggers": {
+        "temp_change": "温差>5度食欲下降",
+        "low_oxygen": "缺氧时停口",
+        "pressure_drop": "气压骤降口变差",
+        "turbid_water": "影响中"
+      },
+      "best_seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "active_depth": [
+        "中"
+      ],
+      "difficulty": "中等",
+      "notes": ""
     }
   ]
 }
