@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: https://*.tile.openstreetmap.org; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; connect-src 'self' https://api.open-meteo.com https://overpass-api.de https://*.tile.openstreetmap.org;">
 <title>钓鱼佬永不空军 v2.0</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -113,8 +114,19 @@ let map, marker, speciesList = [];
 
 async function init() {
     // Load fish data
-    const resp = await fetch("https://eluckydog.github.io/fishcast-engine/data/fish_species.json");
-    const data = await resp.json();
+    let data;
+    try {
+        const resp = await fetch("data/fish_species.json");
+        data = await resp.json();
+    } catch(e) {
+        try {
+            const resp = await fetch("fish_species.json");
+            data = await resp.json();
+        } catch(e2) {
+            document.getElementById("fishSelect").innerHTML = '<option>加载失败，请刷新</option>';
+            return;
+        }
+    }
     speciesList = data.fish_species;
     
     const sel = document.getElementById("fishSelect");
@@ -156,8 +168,11 @@ async function init() {
         fetchWeather(e.latlng.lat, e.latlng.lng);
     });
     
-    // Initial evaluate
-    setTimeout(evaluate, 500);
+    // Initial evaluate after data loads
+    setTimeout(() => {
+        document.getElementById("weatherStatus").textContent = "定位中，请允许位置权限...";
+        evaluate();
+    }, 800);
 }
 
 async function queryWater(lat, lng) {

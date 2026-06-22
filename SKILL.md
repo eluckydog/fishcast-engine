@@ -1,7 +1,7 @@
 ---
 name: 钓鱼佬永不空军
-description: "钓鱼策略智能体：六部协作（户部溶氧/工部地形/吏部鱼种/刑部应激/兵部天气/礼部评分），综合评分生成出钓策略"
-version: 1.0.0
+description: "钓鱼佬永不空军 v2.0 — 六部决策引擎，69种淡水/海水鱼，Open-Meteo天气，OpenStreetMap地图定位，Overpass水体识别，钩型/线组/打窝/技巧推荐"
+version: 2.0.0
 license: Proprietary
 ---
 ---|------|---------|
