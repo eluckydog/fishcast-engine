@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>钓鱼佬永不空军 v2.0</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0e1a;color:#e0e6f0;min-height:100vh}
+.topbar{background:linear-gradient(135deg,#1a3a2a,#0d2818);border-bottom:1px solid #2a4a3a;padding:16px 20px;text-align:center}
+.topbar h1{font-size:1.4em;color:#2ecc71}
+.topbar p{font-size:.75em;color:#6b9394;margin-top:2px}
+.layout{display:flex;gap:0;min-height:calc(100vh - 70px)}
+.left{width:380px;flex-shrink:0;padding:16px;overflow-y:auto;border-right:1px solid #1e2540}
+.right{flex:1;padding:0}
+#map{width:100%;height:calc(100vh - 70px)}
+.panel{margin-bottom:14px}
+.panel h3{font-size:.85em;color:#f7c948;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.panel select,.panel input{width:100%;padding:8px 10px;background:#111627;border:1px solid #2a3050;border-radius:6px;color:#e0e6f0;font-size:.85em}
+.panel select option{background:#111627}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.btn{width:100%;padding:10px;border:0;border-radius:8px;font-size:.9em;cursor:pointer;transition:opacity .2s}
+.btn-primary{background:linear-gradient(135deg,#2ecc71,#27ae60);color:#fff}
+.btn-primary:hover{opacity:.85}
+.result-box{background:#111627;border:1px solid #2a3050;border-radius:10px;padding:14px;margin-top:10px}
+.score-big{font-size:2.2em;font-weight:800;color:#f7c948;text-align:center}
+.score-label{text-align:center;font-size:.75em;color:#6b7394;margin-bottom:8px}
+.bar-item{display:flex;align-items:center;gap:8px;font-size:.78em;margin:4px 0}
+.bar-item .bar-label{width:80px;text-align:right;color:#8892a8;flex-shrink:0}
+.bar{flex:1;height:12px;background:#1a1f35;border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;border-radius:6px;transition:width .5s}
+.bar-fill.green{background:linear-gradient(90deg,#2ecc71,#27ae60)}
+.bar-fill.yellow{background:linear-gradient(90deg,#f7c948,#e67e22)}
+.bar-fill.red{background:linear-gradient(90deg,#e74c3c,#c0392b)}
+.bar-score{width:28px;text-align:right;color:#a8b2d4;flex-shrink:0}
+.advice-box{padding:10px;border-radius:8px;text-align:center;font-size:.85em;font-weight:600;margin:8px 0}
+.advice-box.gold{background:#1a3a2a;border:1px solid #2ecc71;color:#2ecc71}
+.advice-box.ok{background:#3a2a1a;border:1px solid #f7c948;color:#f7c948}
+.advice-box.warn{background:#3a1a1a;border:1px solid #e67e22;color:#e67e22}
+.advice-box.bad{background:#3a1010;border:1px solid #c0392b;color:#e74c3c}
+.tackle-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:.78em}
+.tackle-item{background:#0d1120;border:1px solid #1a1f35;border-radius:6px;padding:8px}
+.tackle-item .tl{color:#6b7394}
+.tackle-item .tv{color:#e0e6f0;margin-top:2px}
+.geo-info{background:#0d1120;border:1px solid #1e2540;border-radius:8px;padding:10px;font-size:.8em;margin-bottom:10px}
+.geo-info .gi-row{display:flex;justify-content:space-between;padding:3px 0}
+.geo-info .gi-l{color:#6b7394}
+.geo-info .gi-r{color:#a8b2d4}
+.autoget{font-size:.72em;color:#6b7394;text-align:center;margin:4px 0}
+@media(max-width:768px){.layout{flex-direction:column}.left{width:100%;max-height:60vh;border-right:0;border-bottom:1px solid #1e2540}#map{height:40vh}}
+</style>
+</head>
+<body>
+<div class="topbar">
+<h1>🎣 钓鱼佬永不空军 v2.0</h1>
+<p>六部决策引擎 · 28+ 鱼种 · 实时天气 · 卫星地图</p>
+</div>
+<div class="layout">
+<div class="left">
+<div class="geo-info" id="geoInfo">
+<div class="gi-row"><span class="gi-l">📍 位置</span><span class="gi-r" id="locText">点击地图或获取位置</span></div>
+<div class="gi-row"><span class="gi-l">💧 最近水体</span><span class="gi-r" id="waterText">—</span></div>
+</div>
+
+<div class="panel">
+<h3>🐟 目标鱼种</h3>
+<select id="fishSelect"><option>加载中...</option></select>
+</div>
+
+<div class="panel">
+<h3>🌤️ 出钓条件</h3>
+<div class="row2">
+<div><label style="font-size:.72em;color:#6b7394">气温 (°C)</label><input type="number" id="tempInput" value="26"></div>
+<div><label style="font-size:.72em;color:#6b7394">气压 (hPa)</label><input type="number" id="presInput" value="1015"></div>
+</div>
+<div class="row2" style="margin-top:6px">
+<div><label style="font-size:.72em;color:#6b7394">天气</label>
+<select id="weatherSelect">
+<option>晴</option><option>多云</option><option>阴</option><option>小雨</option><option>中雨</option><option>大雨</option>
+</select></div>
+<div><label style="font-size:.72em;color:#6b7394">季节</label>
+<select id="seasonSelect">
+<option value="spring">春季</option><option value="summer" selected>夏季</option>
+<option value="autumn">秋季</option><option value="winter">冬季</option>
+</select></div>
+</div>
+<div style="text-align:center;margin:4px 0"><span id="weatherStatus" class="autoget">点击获取实时天气</span></div>
+</div>
+
+<div class="panel">
+<button class="btn btn-primary" onclick="evaluate()">🎯 开始评估</button>
+</div>
+
+<div id="resultArea"></div>
+
+<div class="autoget" style="margin-top:10px">
+<a href="https://github.com/eluckydog/fishcast-engine" style="color:#2ecc71;text-decoration:none;">⚡ 一个人的实验室</a>
+</div>
+</div>
+
+<div class="right">
+<div id="map"></div>
+</div>
+</div>
+
+<script>
+// ===== FISH DATA (embedded from fish_species.json) =====
+const FISH_DATA = null; // Will be fetched
+
+let map, marker, speciesList = [];
+
+async function init() {
+    // Load fish data
+    const resp = await fetch("https://eluckydog.github.io/fishcast-engine/data/fish_species.json");
+    const data = await resp.json();
+    speciesList = data.fish_species;
+    
+    const sel = document.getElementById("fishSelect");
+    sel.innerHTML = speciesList.map(f => `<option>${f.name}</option>`).join("");
+    
+    // Init map
+    map = L.map('map').setView([30.5, 114.3], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap',
+        maxZoom: 18
+    }).addTo(map);
+    
+    marker = L.marker([30.5, 114.3], {draggable:true}).addTo(map);
+    marker.on('dragend', () => {
+        const p = marker.getLatLng();
+        document.getElementById("locText").textContent = `${p.lat.toFixed(4)}, ${p.lng.toFixed(4)}`;
+        queryWater(p.lat, p.lng);
+        fetchWeather(p.lat, p.lng);
+    });
+    
+    // Try geolocation
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(pos => {
+            const lat = pos.coords.latitude, lng = pos.coords.longitude;
+            map.setView([lat, lng], 12);
+            marker.setLatLng([lat, lng]);
+            document.getElementById("locText").textContent = `${lat.toFixed(4)}, ${lng.toFixed(4)}`;
+            queryWater(lat, lng);
+            fetchWeather(lat, lng);
+        }, () => {
+            document.getElementById("locText").textContent = "点击地图定位";
+        });
+    }
+    
+    map.on('click', e => {
+        marker.setLatLng(e.latlng);
+        document.getElementById("locText").textContent = `${e.latlng.lat.toFixed(4)}, ${e.latlng.lng.toFixed(4)}`;
+        queryWater(e.latlng.lat, e.latlng.lng);
+        fetchWeather(e.latlng.lat, e.latlng.lng);
+    });
+    
+    // Initial evaluate
+    setTimeout(evaluate, 500);
+}
+
+async function queryWater(lat, lng) {
+    const overpass = `https://overpass-api.de/api/interpreter?data=[out:json];(` +
+        `way["natural"="water"](around:1000,${lat},${lng});` +
+        `way["waterway"="river"](around:1000,${lat},${lng});` +
+        `relation["natural"="water"](around:1000,${lat},${lng});` +
+        `);out center;`;
+    try {
+        const resp = await fetch(overpass);
+        const data = await resp.json();
+        const el = data.elements?.[0];
+        if (el) {
+            const tags = el.tags || {};
+            const name = tags.name || tags.water || tags.waterway || "未知水体";
+            const type = tags.water || tags.waterway || "自然";
+            document.getElementById("waterText").textContent = `${name} (${type})`;
+        } else {
+            document.getElementById("waterText").textContent = "附近未发现水体";
+        }
+    } catch(e) {
+        document.getElementById("waterText").textContent = "查询失败";
+    }
+}
+
+async function fetchWeather(lat, lng) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&current=temperature_2m,relative_humidity_2m,pressure_msl,weather_code,wind_speed_10m`;
+    try {
+        const resp = await fetch(url);
+        const data = await resp.json();
+        const c = data.current;
+        document.getElementById("tempInput").value = Math.round(c.temperature_2m);
+        document.getElementById("presInput").value = Math.round(c.pressure_msl);
+        const wc = c.weather_code;
+        if (wc <= 2) document.getElementById("weatherSelect").value = "晴";
+        else if (wc <= 3) document.getElementById("weatherSelect").value = "多云";
+        else if (wc <= 48) document.getElementById("weatherSelect").value = "阴";
+        else if (wc <= 56) document.getElementById("weatherSelect").value = "小雨";
+        else document.getElementById("weatherSelect").value = "小雨";
+        document.getElementById("weatherStatus").textContent = `✅ ${c.temperature_2m}°C 已自动获取`;
+    } catch(e) {
+        document.getElementById("weatherStatus").textContent = "天气获取失败，手动填写";
+    }
+}
+
+function evaluate() {
+    const name = document.getElementById("fishSelect").value;
+    const temp = parseFloat(document.getElementById("tempInput").value) || 20;
+    const pres = parseFloat(document.getElementById("presInput").value) || 1013;
+    const weather = document.getElementById("weatherSelect").value;
+    const season = document.getElementById("seasonSelect").value;
+    
+    const fish = speciesList.find(f => f.name === name);
+    if (!fish) { document.getElementById("resultArea").innerHTML = '<div class="result-box">未找到鱼种数据</div>'; return; }
+    
+    const ot = fish.optimal_temp || {min:15,max:25};
+    let waterScore = 100;
+    if (temp < ot.min) waterScore = Math.max(0, 100 - (ot.min - temp) * 10);
+    else if (temp > ot.max) waterScore = Math.max(0, 100 - (temp - ot.max) * 8);
+    
+    let weatherScore = weather.includes("晴") ? 90 : weather.includes("阴") ? 80 : 65;
+    
+    const seasons = fish.best_seasons || ["spring","summer"];
+    let seasonScore = seasons.includes(season) ? 100 : 50;
+    
+    const pt = fish.preferred_terrain || [];
+    let terrainScore = pt.includes("P4") ? 100 : 60;
+    
+    let stressScore = 80;
+    if (temp < 10) stressScore -= 15;
+    if (pres < 998) stressScore -= 10;
+    
+    const total = Math.round(waterScore * 0.30 + weatherScore * 0.25 + seasonScore * 0.20 + terrainScore * 0.15 + stressScore * 0.10);
+    
+    let advice, adviceClass;
+    if (total > 75) { advice = "强烈建议 - 黄金出钓窗口"; adviceClass = "gold"; }
+    else if (total > 60) { advice = "可以出钓"; adviceClass = "ok"; }
+    else if (total > 40) { advice = "勉强可钓，需特殊技巧"; adviceClass = "warn"; }
+    else { advice = "不建议出钓"; adviceClass = "bad"; }
+    
+    const hook = fish.hook || {};
+    const rig = fish.rigging || {};
+    const chum = fish.chumming || {};
+    const tech = fish.technique || {};
+    
+    const bars = [
+        {label:"户部(水温)", score:waterScore, cls:waterScore>70?"green":waterScore>40?"yellow":"red"},
+        {label:"兵部(天气)", score:weatherScore, cls:weatherScore>70?"green":weatherScore>40?"yellow":"red"},
+        {label:"礼部(季节)", score:seasonScore, cls:seasonScore>70?"green":"yellow"},
+        {label:"工部(地形)", score:terrainScore, cls:terrainScore>70?"green":"yellow"},
+        {label:"刑部(应激)", score:stressScore, cls:stressScore>70?"green":stressScore>40?"yellow":"red"}
+    ];
+    
+    document.getElementById("resultArea").innerHTML = `
+        <div class="result-box">
+            <div class="score-big">${total}</div>
+            <div class="score-label">综合评分 / 100</div>
+            <div class="advice-box ${adviceClass}">${advice}</div>
+            ${bars.map(b => `<div class="bar-item"><span class="bar-label">${b.label}</span><div class="bar"><div class="bar-fill ${b.cls}" style="width:${b.score}%"></div></div><span class="bar-score">${b.score}</span></div>`).join("")}
+            <div style="border-top:1px solid #1e2540;margin:12px 0;padding-top:10px">
+                <div class="tackle-grid">
+                    <div class="tackle-item"><div class="tl">🪝 鱼钩</div><div class="tv">${Array.isArray(hook.types)?hook.types.join(" / "):"-"} ${hook.size||""}</div></div>
+                    <div class="tackle-item"><div class="tl">🎣 钓竿</div><div class="tv">${rig.rod||"常规"}</div></div>
+                    <div class="tackle-item"><div class="tl">🧵 主线</div><div class="tv">${rig.main_line||"常规"}</div></div>
+                    <div class="tackle-item"><div class="tl">🧶 子线</div><div class="tv">${rig.sub_line||"常规"}</div></div>
+                </div>
+                <div style="margin-top:8px;padding:8px;background:#0d1120;border-radius:6px">
+                    <div style="font-size:.78em;color:#6b7394">🥫 打窝</div>
+                    <div style="font-size:.85em;margin-top:2px">${Array.isArray(chum.base)?chum.base.join(" + "):"-"}</div>
+                    <div style="font-size:.72em;color:#6b7394;margin-top:2px">${chum.method||""}</div>
+                </div>
+                ${tech.key_point ? `<div style="margin-top:6px;padding:8px;background:#0d1120;border-radius:6px">
+                    <div style="font-size:.78em;color:#6b7394">📖 钓法技巧</div>
+                    <div style="font-size:.85em;margin-top:2px">${tech.method||""} · ${tech.float_tuning||""}</div>
+                    <div style="font-size:.78em;color:#a8b2d4;margin-top:2px">💡 ${tech.key_point}</div>
+                </div>` : ""}
+            </div>
+        </div>
+    `;
+}
+
+init();
+</script>
+</body>
+</html>
