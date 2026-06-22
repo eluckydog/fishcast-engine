@@ -53,7 +53,33 @@
         "中",
         "深"
       ],
-      "difficulty": "入门"
+      "difficulty": "入门",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鲤鱼",
@@ -108,7 +134,33 @@
         "中",
         "深"
       ],
-      "difficulty": "中级"
+      "difficulty": "中级",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "草鱼",
@@ -161,7 +213,33 @@
         "浅",
         "中"
       ],
-      "difficulty": "中级"
+      "difficulty": "中级",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鳜鱼",
@@ -291,7 +369,33 @@
         "浅",
         "中"
       ],
-      "difficulty": "中级"
+      "difficulty": "中级",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鲶鱼",
@@ -415,7 +519,33 @@
         "浅",
         "中"
       ],
-      "difficulty": "入门"
+      "difficulty": "入门",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "青鱼",
@@ -464,7 +594,33 @@
       "active_depth": [
         "深"
       ],
-      "difficulty": "高级"
+      "difficulty": "高级",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鳊鱼",
@@ -514,7 +670,33 @@
       "active_depth": [
         "中"
       ],
-      "difficulty": "入门"
+      "difficulty": "入门",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "黄颡鱼",
@@ -564,7 +746,33 @@
       "active_depth": [
         "深"
       ],
-      "difficulty": "中级"
+      "difficulty": "中级",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "马口鱼",
@@ -764,7 +972,33 @@
         "中"
       ],
       "difficulty": "中级",
-      "notes": "中上层鱼类，常与鳙鱼混养"
+      "notes": "中上层鱼类，常与鳙鱼混养",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鳙鱼",
@@ -814,7 +1048,33 @@
         "中"
       ],
       "difficulty": "中级",
-      "notes": "又名花鲢、胖头鱼"
+      "notes": "又名花鲢、胖头鱼",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鲮鱼",
@@ -863,7 +1123,33 @@
         "深"
       ],
       "difficulty": "中级",
-      "notes": "南方常见鱼种，又名土鲮"
+      "notes": "南方常见鱼种，又名土鲮",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "乌鳢",
@@ -913,7 +1199,33 @@
         "浅"
       ],
       "difficulty": "中级",
-      "notes": "又名黑鱼，护幼性强，产卵期难钓"
+      "notes": "又名黑鱼，护幼性强，产卵期难钓",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鳡鱼",
@@ -962,7 +1274,33 @@
         "中"
       ],
       "difficulty": "高级",
-      "notes": "淡水霸主，爆发力极强"
+      "notes": "淡水霸主，爆发力极强",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "大口黑鲈",
@@ -1013,7 +1351,33 @@
       ],
       "difficulty": "中级",
       "notes": "又名加州鲈，外来物种，仅限合法养殖水域垂钓",
-      "legal_warning": "入侵物种，严禁放流至自然水域"
+      "legal_warning": "入侵物种，严禁放流至自然水域",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "虹鳟",
@@ -1136,7 +1500,33 @@
       ],
       "difficulty": "入门",
       "notes": "外来物种，繁殖力极强",
-      "legal_warning": "入侵物种，严禁放流至自然水域"
+      "legal_warning": "入侵物种，严禁放流至自然水域",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "巴西鲷",
@@ -1183,7 +1573,33 @@
         "深"
       ],
       "difficulty": "中级",
-      "notes": "南美引进品种，耐低氧能力极强"
+      "notes": "南美引进品种，耐低氧能力极强",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "梭鲈",
@@ -1230,7 +1646,33 @@
         "深"
       ],
       "difficulty": "高级",
-      "notes": "喜清澈深水区域"
+      "notes": "喜清澈深水区域",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "欧洲鳊",
@@ -1279,7 +1721,33 @@
         "深"
       ],
       "difficulty": "中级",
-      "notes": "欧洲常见品种，国内较少"
+      "notes": "欧洲常见品种，国内较少",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "丁鱥",
@@ -1327,7 +1795,33 @@
         "深"
       ],
       "difficulty": "中级",
-      "notes": "又名丁桂，低温深水越冬"
+      "notes": "又名丁桂，低温深水越冬",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "革胡子鲶",
@@ -1378,7 +1872,33 @@
       ],
       "difficulty": "入门",
       "notes": "又名埃及塘虱，外来物种",
-      "legal_warning": "入侵物种，严禁放流至自然水域"
+      "legal_warning": "入侵物种，严禁放流至自然水域",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "斑点叉尾鮰",
@@ -1428,7 +1948,33 @@
         "深"
       ],
       "difficulty": "中级",
-      "notes": "又名沟鲶，美国引进品种"
+      "notes": "又名沟鲶，美国引进品种",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "淡水白鲳",
@@ -1477,7 +2023,33 @@
         "中"
       ],
       "difficulty": "中级",
-      "notes": "南美食人鱼近亲，牙齿锋利"
+      "notes": "南美食人鱼近亲，牙齿锋利",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鳗鲡",
@@ -1530,7 +2102,33 @@
       ],
       "difficulty": "高级",
       "notes": "降河洄游鱼类，野生资源稀缺",
-      "protection_status": "部分区域禁钓"
+      "protection_status": "部分区域禁钓",
+      "hook": {
+        "types": [
+          "伊势尼",
+          "伊豆"
+        ],
+        "size": "常规3-7号"
+      },
+      "rigging": {
+        "main_line": "2.0-3.0",
+        "sub_line": "1.2-2.0",
+        "rod": "综合竿3.6-5.4m"
+      },
+      "chumming": {
+        "base": [
+          "玉米",
+          "颗粒",
+          "麸皮"
+        ],
+        "method": "适量打窝"
+      },
+      "recommended_bait": "商品饵/蚯蚓",
+      "technique": {
+        "method": "底钓",
+        "float_tuning": "调4钓2",
+        "key_point": "选好钓位，注意看漂"
+      }
     },
     {
       "name": "鲈鱼",
